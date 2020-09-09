@@ -1,2 +1,2 @@
 # Portafolio
-Pruebas de que se hacer cositas
+Here you can see my skills to make differents tech things.
