@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    background-color: black;
+    color: white;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+    .navigation ul li{
+        display: inline-block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 0.5rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+            .navigation ul li a:hover{
+                background: #4a4a4a;
+            }
+    
+.diplomas img{
+    width: 20% ;
+    height: 15%;
+    
+}
+.diplomas img:hover{
+    width: 40%;
+    height: 30%px;
+}
+
+.diplomas{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 25%;
+    
+}

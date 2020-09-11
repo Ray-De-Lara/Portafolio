@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .header{
     background-color: black;
@@ -53,5 +54,67 @@ body{
     top: 55%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 7s0px;
+    font-size: 50px;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+    
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: -80px;
+}
+
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 0.5;
+    width: 50px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 70px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 55px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 6s;
+    width: 50px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4s;
+    width: 55px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 2s;
+    width: 70px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 5s;
+    width: 55px;
 }
