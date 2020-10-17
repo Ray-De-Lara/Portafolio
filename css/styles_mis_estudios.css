@@ -4,12 +4,12 @@ body{
     
 }
 .header{
-    background:black;
+    background-color: black;
     color: white;
-    padding: 2rem 0;
+    position: fixed;
     left: 0;
     top: 0;
-    right: 0;
+    width: 100%;
 }
 
 .header a{
@@ -17,7 +17,7 @@ body{
     text-decoration: none;
 }
 .logo{
-    letter-spacing: 15px;
+    letter-spacing: -7px;
     font-size: 1.4em;
     padding-left: 5px;
 }
@@ -51,7 +51,8 @@ body{
             }
 
 .nametag{
-    margin: 0.7em auto 0.7em auto;
+    margin: 0.7em 0 0.7em 0;
+    padding-top: 1.5em;
     display: inline-block;
     text-align: center;
 }
@@ -59,7 +60,6 @@ body{
     width: 90%;
     max-width: 1200px;
     margin: 1em 3em 1em 1em;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     
