@@ -226,10 +226,6 @@ section {
     color: #f34f29;
 }
 
-.fa-react {
-    color: var(--blueReact);
-}
-
 .skill__name {
     font-size: 16px;
     text-align: center;
