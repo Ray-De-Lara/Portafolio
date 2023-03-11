@@ -1,40 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-</head>
-<header class="header">
-    <div class="container logo-nav-container">
-        <a href="#" class="logo">RD</a>
-        <span class="menu-icon">Ver menu</span>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./mis_estudios.html">Mis estudios</a></li>
-                <li><a href="whoiam.html">Quien soy</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<body>
-    <h1 id="hola" class="hola">Hola.</h1>
-    <h1 id="saludo" class="saludo">Bienvenido.</h1>
 
-    <div class="bubbles">
-    <img src="images/bubble.png" alt="bubble">
-    <img src="images/bubble.png" alt="bubble">
-    <img src="images/bubble.png" alt="bubble">
-    <img src="images/bubble.png" alt="bubble">
-    <img src="images/bubble.png" alt="bubble">
-    <img src="images/bubble.png" alt="bubble">
-    <img src="images/bubble.png" alt="bubble">
-    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frontend developer, here you will find information about the projects I have done." />
+    <meta property="og:description" content="Frontend developer, here you will find information about the projects I have done. " />
+    <meta property="og:title" content="Raymundo De Lara | Mechatronic Engineer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Raymundo De Lara | Mechatronic Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" href="./assets/logo.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/logo-120x120.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-16x16.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Raymundo De Lara / Mechatronic Engineer</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__logo">
+                <p class="navbar__title">
+                    <a href="#">RD</a>
+                </p>
+            </div>
+            <div class="navbar__menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar__links">
+                <li class="navbar__link active" data-ref="home">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="navbar__link" data-ref="about">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navbar__link" data-ref="portfolio">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="navbar__link" data-ref="services">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="navbar__link" data-ref="contact">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="home">
+
+        <picture>
+            <source type="image/jpeg" srcset="./assets/profile.jpg" />
+            <img class="home__profile" alt="picture profile" />
+        </picture>
+        <div class="home__description">
+            <span class="home__title--primary">Hi!</span>
+            <h1 class="home__title">I'm Raymundo De Lara</h1>
+            <span class="home__title--secondary">Mechatronic Engineer</span>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="section__title">About</h2>
+            <div class="about__grid">
+                <div class="about__description">
+                    <h2>Who am I?</h2>
+                    <h2>I'm Raymundo De Lara, Web Developer / Mechatronic Engineer.</h2>
+                    <justify>
+                        <p class="about_paragraph">
+                            I'm a Front End developer with experience building websites using various technologies and tools. I'm passionate about web design and programming and always strive to improve my skills to create intuitive, functional websites.
+                        </p>
+
+                        <p class="about_paragraph">
+                            I'm naturally curious and love understanding how things work. I have experience in computer maintenance and technical support, and practical knowledge of electrical installation and maintenance, which helps me understand the projects I work on more comprehensively.
+                        </p>
+
+                        <p class="about_paragraph">
+                            I'm also skilled in technical lighting and audio for various events, from festivals to theater productions. This has taught me to work well in teams, pay attention to detail, and remain calm under pressure.
+                        </p>
+
+                        <p class="about_paragraph">
+                            I'm excited to continue growing as a technology professional, utilizing my skills and knowledge to help my team achieve success.
+                        </p>
+
+
+                    </justify>
+                    <a class="button--cta" href="./assets/RaymundoDeLaraCV.pdf" download="Raymundo De Lara CV" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-download"></i>Download CV
+                    </a>
+                </div>
+                <div class="about__skills">
+                    <div class="skill__title">
+                        <h2>My skills:</h2>
+                    </div>
+                    <p class="technologies">FRONTEND</p>
+                    <div class="skills__grid">
+                        <div class="skill__item">
+                            <i class="fab fa-react"></i>
+                            <div class="skill__name">REACTJS</div>
+                        </div>
+                        <div class="skill__item">
+                            <i class="fab fa-wordpress"></i>
+                            <div class="skill__name">WORDPRESS</div>
+                        </div>
+                        <div class="skill__item">
+                            <i class="fab fa-js"></i>
+                            <div class="skill__name">JAVASCRIPT</div>
+                        </div>
+                    </div>
+
+                    <p class="technologies">DATABASES</p>
+                    <div class="skills__grid">
+                        <div class="skill__item">
+                            <i class="fa-solid fa-leaf"></i>
+                            <div class="skill__name">MONGODB</div>
+                        </div>
+                        <div class="skill__item">
+                            <i class="fa-solid fa-fire"></i>
+                            <div class="skill__name">FIREBASE</div>
+                        </div>
+                        <div class="skill__item">
+                            <i class="fa-solid fa-database"></i>
+                            <div class="skill__name">MYSQL</div>
+                        </div>
+                    </div>
+                    
+                    <p class="technologies">BACKEND</p>
+                    <div class="skills__grid">
+                        <div class="skill__item">
+                            <i class="fa-brands fa-node"></i>
+                            <div class="skill__name">NODE</div>
+                        </div>
+                        <div class="skill__item">
+                            <i class="fa-brands fa-node-js"></i>
+                            <div class="skill__name">EXPRESS</div>
+                        </div>
+                        <div class="skill__item">
+                            <i class="fab fa-php"></i>
+                            <div class="skill__name">PHP</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section__title">Portfolio</h2>
+            <h3 class="section__subtitle">One of the most enriching aspects of my professional experience has been the participation in different projects. I invite you to get to know some of them below.</h3>
+            <div class="portfolio__grid">
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/enchulame_logo.png" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">Concurso Enchulame el Taller</h3>
+                        <p class="portfolio__description--text">
+                            PHP, MYSQL, CSS
+                        </p>
+
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/AKRONLogos-19.png" />
+                        <img class="akron" alt="portfolio item" class=""/>
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">AKRON</h3>
+                        <p class="portfolio__description--text">
+                            Laravel, MySQL
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://akron.com.mx/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/hachi_slider2.png" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">HACHI</h3>
+                        <p class="portfolio__description--text">
+                            CodeIgniter, Mysql
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://hachi.mx/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/biofeed.jpg" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">Biofeed (Ecommerce)</h3>
+                        <p class="portfolio__description--text">
+                            Shopify
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://biofeedmx.myshopify.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/miirza.jpg" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">Miirza</h3>
+                        <p class="portfolio__description--text">
+                            React, JS, Firebase
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://miirza.com/#1" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/bixplan.png" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">BixPlan</h3>
+                        <p class="portfolio__description--text">
+                            Wordpress
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://bixplan.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/mueblesliz.png" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">LizMuebles</h3>
+                        <p class="portfolio__description--text">
+                            Laravel, MySql
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://www.mueblesliz.com.mx/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/pintorentals.png" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">pintorentals</h3>
+                        <p class="portfolio__description--text">
+                            Laravel, MySql
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://pintorentals.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/carlsjr.png" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">Carls Jr.</h3>
+                        <p class="portfolio__description--text">
+                            Netlify, Mysql
+                        </p>
+                        <div class="buttons__container">
+                            <a class="button" href="https://carlsjr.com.mx/contacto" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-globe-americas"></i> Website
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <picture>
+                        <source type="image/jpeg" srcset="./projects/CSS-Layout.jfif" />
+                        <img class="portfolio__img" alt="portfolio item" />
+                    </picture>
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__description--title">Audio & Illumination
+                            <h3>
+                                <p class="portfolio__description--text">
+                                    DMX protocol, interconect devices.
+                                </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2 class="section__title">Services</h2>
+            <h3 class="section__subtitle">Services I offer to my clients</h3>
+            <div class="services__grid">
+                <div class="services__item">
+                    <i class="fas fa-robot"></i>
+                    <h3>Reprogramming Epson Robots</h3>
+                    <p>
+                        Epson robots are very used at the industry and I have experiece reprogramming these robots with the official software.
+                    </p>
+                </div>
+                <div class="services__item">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Develop arduino projects</h3>
+                    <p>
+                        Fast solutions to some problems and homemade proyects I got experiece making arduino projects.
+                    </p>
+                </div>
+                <div class="services__item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>
+                        I know the importance of web design and can help you create a website you will love.
+                    </p>
+                </div>
+                <div class="services__item">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Machine maintenance</h3>
+                    <p>
+                        Always the machines has issues I have experiece solving such differents machines problems(sensors capacitives, inuctives, distance, pneumatic etc. )
+                    </p>
+                </div>
+                <div class="services__item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Computer Maintenance</h3>
+                    <p>
+                        I have repaired a lot of machines as a Technical.
+                    </p>
+                </div>
+                <div class="services__item">
+                    <i class="fas fa-microchip"></i>
+                    <h3>PLC</h3>
+                    <p>
+                        I have developed projects of metal detections with PLC and sensors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section__title">Contact</h2>
+            <h3 class="section__subtitle">
+                Contact me if you want us to work together.
+            </h3>
+            <div class="contact__grid">
+
+                <a href="mailto:raydelara99@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+
+                        <i class="far fa-envelope"></i>
+                        <p>Mail Me</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Ray-De-Lara" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+                        <i class="fab fa-github"></i>
+                        <p>Follow Me</p>
+                    </div>
+                </a>
+                <a href="https://twitter.com/Raydelara099" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+                        <i class="fab fa-twitter"></i>
+                        <p>Follow Me</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/ray-de-lara/" target="_blank" rel="noopener noreferrer">
+                    <div class="contact__item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <p>Contact Me</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Copyright © 2023. <a href="#">raydelara</a> <br /> All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <script async src="./index.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="./js/index.js"></script>
+
 </html>
